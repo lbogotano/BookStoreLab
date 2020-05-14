@@ -15,35 +15,16 @@ public class Bookstore{
     private static final int OPENING_TIME = 7 ;
     private static final int CLOSING_TIME = 20 ;
 
-    //Public Methods
+
 
     public Bookstore() {
-        this.Name = "Your Bookstore Name";
+        this.Name = "Luis Book store";
         this.Address = "1234 Books Ave";
         this.SqFt = 1300;
         this.HasNewBooks = true;
         this.HasUsedBooks = true;
-        this.Open = this.isOpen(currentTime); //needs to be adjusted;
+        this.Open = this.isOpen(currentTime); 
     }
-
-    public Bookstore(String name, String address) {
-        this.Name = name;
-        this.Address = address;
-        this.SqFt = 1000;
-        this.HasNewBooks = true;
-        this.HasUsedBooks = true;
-        this.Open = this.isOpen(currentTime); //needs to be adjusted;
-    }
-
-    public Bookstore(String name, String address, int sqft) {
-        this.Name = name;
-        this.Address = address;
-        this.SqFt = sqft;
-        this.HasNewBooks = true;
-        this.HasUsedBooks = true;
-        this.Open = this.isOpen(currentTime); //needs to be adjusted;
-    }
-
     public void getStoreHours() {
         System.out.println("Store Hours are from " + OPENING_TIME + ":00 to " + CLOSING_TIME + ":00.");
     }
@@ -58,7 +39,6 @@ public class Bookstore{
         }
     }
 
-    // Private Internal Methods
 
     private boolean isOpen(Date date) {
         SimpleDateFormat ft = new SimpleDateFormat("H");
