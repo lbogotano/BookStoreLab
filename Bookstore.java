@@ -8,7 +8,6 @@ public class Bookstore{
     public int SqFt;
     public boolean HasNewBooks;
     public boolean HasUsedBooks;
-
     private boolean Open;
     private Date currentTime = new Date();
     
@@ -20,7 +19,7 @@ public class Bookstore{
     public Bookstore() {
         this.Name = "Luis Book store";
         this.Address = "3423 Ave charotte nc";
-        this.SqFt = 1300;
+        this.SqFt = 2500;
         this.HasNewBooks = true;
         this.HasUsedBooks = true;
         this.Open = this.isOpen(currentTime); 
@@ -52,4 +51,5 @@ public class Bookstore{
         }
     }
 
+    // TO BE COMPLETED
 }    
