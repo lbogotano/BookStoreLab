@@ -19,7 +19,7 @@ public class Bookstore{
 
     public Bookstore() {
         this.Name = "Luis Book store";
-        this.Address = "1234 Books Ave";
+        this.Address = "3423 Ave charotte nc";
         this.SqFt = 1300;
         this.HasNewBooks = true;
         this.HasUsedBooks = true;
