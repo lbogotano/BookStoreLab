@@ -24,32 +24,32 @@ public class Bookstore{
         this.HasUsedBooks = true;
         this.Open = this.isOpen(currentTime); 
     }
-    public void getStoreHours() {
-        System.out.println("Store Hours are from " + OPENING_TIME + ":00 to " + CLOSING_TIME + ":00.");
-    }
+    // public void getStoreHours() {
+    //     System.out.println("Store Hours are from " + OPENING_TIME + ":00 to " + CLOSING_TIME + ":00.");
+    // }
 
-    public boolean isOpen() {
-        if (Open) {
-            System.out.println("Yes, the store is open right now");
-            return true;
-        } else {
-            System.out.println("No, the store is currently closed");
-            return false;
-        }
-    }
+    // public boolean isOpen() {
+    //     if (Open) {
+    //         System.out.println("Yes, the store is open right now");
+    //         return true;
+    //     } else {
+    //         System.out.println("No, the store is currently closed");
+    //         return false;
+    //     }
+    // }
 
 
-    private boolean isOpen(Date date) {
-        SimpleDateFormat ft = new SimpleDateFormat("H");
+    // private boolean isOpen(Date date) {
+    //     SimpleDateFormat ft = new SimpleDateFormat("H");
 
-        int time = Integer.parseInt(ft.format(date));
+    //     int time = Integer.parseInt(ft.format(date));
         
-        if (time > OPENING_TIME && time < CLOSING_TIME) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    //     if (time > OPENING_TIME && time < CLOSING_TIME) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // }
 
     // TO BE COMPLETED
 }    
